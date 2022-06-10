@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*,*::after, *::before {
+    box-sizing: border-box;
+}
+
 body {
     background-image: url('./images/bg-tablet-pattern.svg');
     background-repeat: no-repeat;
@@ -70,4 +74,64 @@ body {
   
 .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+/* carousel */
+
+.carousel {
+    position: relative;
+    height: 400px;
+}
+
+.div-absolute {
+    position: relative;
+    width: 100%;
+    padding: 5rem 0rem;
+}
+
+.slide {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+    transition-delay: 200ms;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.slide[data-active] {
+    opacity: 1;
+    transition-delay: 0ms;
+}
+
+.carousel-button {
+    position: absolute;
+    z-index: 10;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding:0 0.5rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.carousel-button:focus {
+    outline: 1px solid black;
+}
+
+.carousel-button.prev {
+    left: 1rem;
+}
+
+.carousel-button.next {
+    right: 1rem;
 }

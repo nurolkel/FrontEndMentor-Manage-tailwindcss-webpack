@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manage Landing Page</title>
-<script defer src="app313ce0b318f1858cf3d3.js"></script></head>
+<script defer src="appa3c420ebf72d165a0a1d.js"></script></head>
 <body>
     <nav class="relative container mx-auto p-6">
         <div class="flex item-center justify-between">
@@ -147,9 +147,13 @@
                 What's Different About Manage?
             </h2>
             
-            <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+            <div class="my-24 flex flex-col md:flex-row md:space-x-6 carousel" data-carousel>
+               <button class="carousel-button prev text-brightRed" data-carousel-button="prev">&#10092;</button>
+               <button class="carousel-button next text-brightRed" data-carousel-button="next">&#10093;</button>
                
-                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
+               <div class="div-absolute  md:space-x-6 md:flex-row" data-slides>
+
+                <div class="my-7 flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3 slide" data-active>
                     <img src="avatar-anisha.png" class="w-16 -mt-14" alt="anisha" />
                     <h5 class="text-lg font-bold">Anisha Li</h5>
                     <p class="text-sm text-darkGrayishBlue">
@@ -158,7 +162,7 @@
                     </p>
                 </div>
                 
-                <div class="hidden flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3">
+                <div class="my-7 flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3 slide">
                     <img src="avatar-ali.png" class="w-16 -mt-14" alt="ali" />
                     <h5 class="text-lg font-bold">Ali Bravo</h5>
                     <p class="text-sm text-darkGrayishBlue">
@@ -168,14 +172,25 @@
                     </p>
                 </div>
                 
-                <div class="hidden flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3">
+                <div class="my-7 flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3 slide">
                     <img src="avatar-richard.png" class="w-16 -mt-14" alt="richard" />
                     <h5 class="text-lg font-bold">Richard Watts</h5>
                     <p class="text-sm text-darkGrayishBlue">
                        “Manage allows us to provide structure and process. It keeps us organized 
                         and focused. I can’t stop recommending them to everyone I talk to!”
                     </p>
-                </div> 
+                </div>
+
+                <div class="my-7 flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3 slide">
+                    <img src="avatar-shanai.png" class="w-16 -mt-14" alt="shanai" />
+                    <h5 class="text-lg font-bold">Shanai Smith</h5>
+                    <p class="text-sm text-darkGrayishBlue">
+                       “Manage allows us to provide structure and process. It keeps us organized 
+                        and focused. I can’t stop recommending them to everyone I talk to!”
+                    </p>
+                </div>
+
+                </div>
             </div>
             <div class="my-16">
                 <a href="#" class="hover:bg-brightRedLight p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline">Get Started</a>
